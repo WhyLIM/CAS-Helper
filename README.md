@@ -16,7 +16,7 @@
 >
 > 逼得我当场进行一个 ~~JS 逆向~~量子学习
 >
-> ![快速等待](D:\Study\Project\CSM-Helper\快速等待.png)
+> ![快速等待](./快速等待.png)
 
 看了一下这个网站似乎是一个 Vue.js 写的单页面应用（SPA），经过 JS 逆向
 
@@ -131,4 +131,4 @@ fetch("https://www.casmooc.cn/server/api/study/submit", {
 
 ## 📜 许可证
 
-本项目采用 [MIT License] 开源。
+本项目采用 [MIT License](./LICENSE) 开源。
