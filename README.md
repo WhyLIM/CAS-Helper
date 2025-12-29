@@ -92,24 +92,33 @@ fetch("https://www.casmooc.cn/server/api/study/submit", {
 
 ## 🚀 使用方法
 
-### 方式一：开发者工具（推荐）
+### 方式一：控制台运行
 
 1. 进入 CASMOOC 课程播放页面。
 2. 按 `F12` 打开开发者工具，点击 `Console`（控制台）。
 3. 复制 `main.js` 的代码并粘贴运行。
 4. 点击播放视频，脚本将自动接管。
 
-### 方式二：书签一键启动
+### 方式二：使用 Tampermonkey
 
-1. 创建一个新的浏览器书签。
+以 Chrome 浏览器为例
 
-2. 在“网址/URL”栏中输入以下代码（建议自行对 `main.js` 进行混淆或压缩）：
+1. 添加[油猴插件](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=zh-CN)
 
-   JavaScript
+2. 点击扩展程序图标（一个拼图） → 管理扩展程序 → 右上角打开开发者模式
 
+3. 点击插件 → 添加新脚本
+
+4. 默认有几行代码：
+   ```javascript
+   (function() {
+       'use strict';
+   
+       // Your code here...
+   })();
    ```
-   javascript:(function(){ /* 将 main.js 代码压缩后放在此处 */ })();
-   ```
+
+   直接复制 `main.js` 中的代码替换这些代码即可
 
 ## ⚠️ 免责声明
 
